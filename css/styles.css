@@ -25,7 +25,7 @@ body {
   margin: 0px;
 }
 
-.list {
+.mplnone {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,25 +44,83 @@ body {
 
 /* User panel */
 
-.background-head {
-  width: 100%;
+.user-panel {
+  display: flex;
+  justify-content: space-between;
   background-color: #19bb9b;
 }
 
-.background-head {
+.masthead__background-head {
+  width: 100%;
+  background-color: #19bb9b;
   position: sticky;
   top: 0;
+}
+
+.user-contacts__list {
+  display: flex;
+}
+
+.user-contacts__link {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  color: #f9fcfc;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  transition-timing-function: var(--timing-fn);
+}
+
+.user-contacts__link:hover {
+  color: #aaa9a9;
+}
+
+.user-contacts__link--call {
+  display: flex;
+  justify-content: center;
+  padding-right: 70px;
+  padding-left: 0px;
+}
+
+.user-contacts__link--call::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-image: url(../images/icons/call.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-contacts__link--email {
+  display: flex;
+  justify-content: center;
+}
+
+.user-contacts__link--email::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-image: url(../images/icons/email.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .user-control {
   display: flex;
 }
 
-.user-list {
+.user-control__list {
   margin: 0px;
 }
 
-.user-control .link {
+.user-control__link {
   display: block;
   padding-left: 17px;
   padding-right: 17px;
@@ -76,70 +134,9 @@ body {
   transition-timing-function: var(--timing-fn);
 }
 
-.user-control .link:hover,
-.user-control .link:focus {
+.user-control__link:hover,
+.user-control__link:focus {
   color: #7ed9c7;
-}
-
-.contacts {
-  display: flex;
-}
-
-.feedback {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0px;
-  color: #f9fcfc;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
-  transition-timing-function: var(--timing-fn);
-}
-
-.feedback:hover {
-  color: #aaa9a9;
-}
-
-.contacts .call {
-  display: flex;
-  justify-content: center;
-  padding-right: 70px;
-  padding-left: 0px;
-}
-
-.call::before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  background-image: url(../images/icons/call.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contacts .email {
-  display: flex;
-  justify-content: center;
-}
-
-.email::before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  margin-right: 6px;
-  background-image: url(../images/icons/email.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.user-panel {
-  display: flex;
-  justify-content: space-between;
-  background-color: #19bb9b;
 }
 
 /* Logo */

@@ -13,32 +13,47 @@
     <title>MART</title>
   </head>
   <body>
-    <header class="main-head">
-      <div class="background-head">
+    <header class="masthead">
+      <div class="masthead__background-head">
         <div class="user-panel container">
-          <ul class="contacts list">
-            <li class="user-list">
-              <a href="tel:+123-123456789" class="feedback call"
+          <ul class="user-contacts__list mplnone">
+            <li class="user-contacts__item">
+              <a
+                href="tel:+123-123456789"
+                class="user-contacts__link user-contacts__link--call"
                 >+123-123456789</a
               >
             </li>
-            <li class="user-list">
-              <a href="mailto:info@ltnt.com" class="feedback email"
+            <li class="user-contacts__list">
+              <a
+                href="mailto:info@ltnt.com"
+                class="user-contacts__link user-contacts__link--email"
                 >info@ltnt.com</a
               >
             </li>
           </ul>
-          <ul class="user-control list">
-            <li class="user-list"><a href="#" class="link">My account</a></li>
-            <li class="user-list"><a href="#" class="link">Wishlist</a></li>
-            <li class="user-list"><a href="#" class="link">Cart</a></li>
-            <li class="user-list"><a href="#" class="link">Checkout</a></li>
-            <li class="user-list">
-              <a href="#" class="link">Login/Register</a>
+          <ul class="user-control mplnone">
+            <li class="user-control__list">
+              <a href="#" class="user-control__link">My account</a>
+            </li>
+            <li class="user-control__list">
+              <a href="#" class="user-control__link">Wishlist</a>
+            </li>
+            <li class="user-control__list">
+              <a href="#" class="user-control__link">Cart</a>
+            </li>
+            <li class="user-control__list">
+              <a href="#" class="user-control__link">Checkout</a>
+            </li>
+            <li class="user-control__list">
+              <a href="#" class="user-control__link">Login/Register</a>
             </li>
           </ul>
         </div>
       </div>
+
+      /* Доделать */
+
       <div class="container">
         <nav class="page-nav">
           <a href="#" class="logo"><span class="logo-disign">M</span>art</a>
