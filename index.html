@@ -24,7 +24,7 @@
                 >+123-123456789</a
               >
             </li>
-            <li class="user-contacts__list">
+            <li class="user-contacts__item">
               <a
                 href="mailto:info@ltnt.com"
                 class="user-contacts__link user-contacts__link--email"
@@ -32,26 +32,25 @@
               >
             </li>
           </ul>
-          <ul class="user-control">
-            <li class="user-control__list">
+          <ul class="user-control_list">
+            <li class="user-control__item">
               <a href="#" class="user-control__link">My account</a>
             </li>
-            <li class="user-control__list">
+            <li class="user-control__item">
               <a href="#" class="user-control__link">Wishlist</a>
             </li>
-            <li class="user-control__list">
+            <li class="user-control__item">
               <a href="#" class="user-control__link">Cart</a>
             </li>
-            <li class="user-control__list">
+            <li class="user-control__item">
               <a href="#" class="user-control__link">Checkout</a>
             </li>
-            <li class="user-control__list">
+            <li class="user-control__item">
               <a href="#" class="user-control__link">Login/Register</a>
             </li>
           </ul>
         </div>
       </div>
-
       <div class="container">
         <nav class="page-navigation">
           <a href="#" class="logo"><span class="logo-disign">M</span>art</a>
@@ -90,33 +89,47 @@
       </section>
       <section class="page-section__delivery">
         <div class="container">
-          <ul class="delivery-info">
-            <li class="delivery-info__list delivery-info__icon-settings">
-              <h3 class="delivery-info__title">Settings</h3>
-              <p class="about-info">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                commodi veritatis nisi odio nemo ex illo veniam minus ipsum
-                nihil?
-              </p>
-            </li>
-            <li class="delivery-info__list delivery-info__icon-money">
-              <h3 class="delivery-info__title">Money back</h3>
+          <ul class="delivery-info__list">
+            <li class="delivery-info__item">
+              <h3
+                class="delivery-info__title delivery-info__title--icon-settings"
+              >
+                Settings
+              </h3>
               <p class="delivery-info__about">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
                 commodi veritatis nisi odio nemo ex illo veniam minus ipsum
                 nihil?
               </p>
             </li>
-            <li class="delivery-info__list delivery-info__icon-worldwide">
-              <h3 class="delivery-info__title">Worldwide shipping</h3>
+            <li class="delivery-info__item">
+              <h3 class="delivery-info__title delivery-info__title--icon-money">
+                Money back
+              </h3>
               <p class="delivery-info__about">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
                 commodi veritatis nisi odio nemo ex illo veniam minus ipsum
                 nihil?
               </p>
             </li>
-            <li class="delivery-info__list delivery-info__icon-shipping">
-              <h3 class="delivery-info__title">Worldwide shipping</h3>
+            <li class="delivery-info__item --icon-worldwide">
+              <h3
+                class="delivery-info__title delivery-info__title--icon-worldwide"
+              >
+                Worldwide shipping
+              </h3>
+              <p class="delivery-info__about">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                commodi veritatis nisi odio nemo ex illo veniam minus ipsum
+                nihil?
+              </p>
+            </li>
+            <li class="delivery-info__item ">
+              <h3
+                class="delivery-info__title delivery-info__title--icon-shipping"
+              >
+                Worldwide shipping
+              </h3>
               <p class="delivery-info__about">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
                 commodi veritatis nisi odio nemo ex illo veniam minus ipsum
@@ -138,26 +151,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Blue tshirt</p>
@@ -172,26 +193,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Woman shirt</p>
@@ -206,26 +235,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Yellow tshirt</p>
@@ -240,26 +277,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Cool lingerie</p>
@@ -281,26 +326,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Wooman shoes</p>
@@ -315,26 +368,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Wooman shirt</p>
@@ -349,26 +410,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Yellow tshirt</p>
@@ -383,26 +452,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Cool lingerie</p>
@@ -417,26 +494,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Blue tshirt</p>
@@ -451,26 +536,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Wooman shirt</p>
@@ -485,26 +578,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">man shoes</p>
@@ -519,26 +620,34 @@
                   width="255"
                   class="products-list__overlay--image"
                 />
-                <div class="actions">
-                  <button
-                    type="button"
-                    class="actions__button actions__button--like-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--arrow-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--timing-icon"
-                  ></button>
-                  <button
-                    type="button"
-                    class="actions__button actions__button--addcard-icon"
-                  >
-                    <span class="cart-icon">Add to cart</span>
-                  </button>
-                </div>
+                <ul class="actions_list">
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--like-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--arrow-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--timing-icon"
+                    ></button>
+                  </li>
+                  <li class="actions_item">
+                    <button
+                      type="button"
+                      class="actions__button actions__button--addcard-icon"
+                    >
+                      <span class="cart-icon">Add to cart</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
               <div class="products-list__about">
                 <p class="products-list__about--description">Cool lingerie</p>
@@ -551,54 +660,54 @@
       <section class="page-section__latest-news">
         <div class="container">
           <h2 class="main-title__styles line-bolt">Latest news</h2>
-          <ul class="news">
-            <li class="news__list">
+          <ul class="news__list">
+            <li class="news__item">
               <img
                 src="./images/news-1.png"
                 alt="Hot news"
-                class="news__list--img"
+                class="news__item--img"
                 width="350"
               />
               <h3 class="news-title news-line">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deleniti!
               </h3>
-              <p class="news__list--about">
+              <p class="news__item--about">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                 consequatur id error dolorem corrupti unde aliquam ullam
                 reiciendis aut corporis!
               </p>
               <a href="#" class="button-article">Read more</a>
             </li>
-            <li class="news__list">
+            <li class="news__item">
               <img
                 src="./images/news-2.png"
                 alt="Hot news"
-                class="news__list--img"
+                class="news__item--img"
                 width="350"
               />
               <h3 class="news-title news-line">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                 hic.
               </h3>
-              <p class="news__list--about">
+              <p class="news__item--about">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                 consequatur id error dolorem corrupti unde aliquam ullam
                 reiciendis aut corporis!
               </p>
               <a href="#" class="button-article">Read more</a>
             </li>
-            <li class="news__list">
+            <li class="news__item">
               <img
                 src="./images/news-3.png"
                 alt="Hot news"
-                class="news__list--img"
+                class="news__item--img"
                 width="350"
               />
               <h3 class="news-title news-line">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </h3>
-              <p class="news__list--about">
+              <p class="news__item--about">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
                 consequatur id error dolorem corrupti unde aliquam ullam
                 reiciendis aut corporis!
