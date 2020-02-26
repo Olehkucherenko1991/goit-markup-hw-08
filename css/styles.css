@@ -37,6 +37,11 @@ li {
   margin-right: auto;
 }
 
+.page-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 /* User panel */
 
 .user-panel {
@@ -176,7 +181,7 @@ li {
   margin-left: auto;
 }
 
-.site-navigation .site-navigation_link {
+.site-navigation .site-navigation__link {
   display: block;
   padding-left: 15px;
   padding-right: 15px;
@@ -191,8 +196,8 @@ li {
   transition-timing-function: var(--timing-fn);
 }
 
-.site-navigation .site-navigation_link:hover,
-.site-navigation .site-navigation_link:focus {
+.site-navigation .site-navigation__link:hover,
+.site-navigation .site-navigation__link:focus {
   color: #1abc9c;
 }
 
@@ -392,18 +397,11 @@ li {
 
 /* New collection */
 
-.page-section__new-collection {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.new-collection {
   background-color: #e9effd;
 }
 
 /* Main product page */
-
-.page-section__featured-products {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 .main-title__styles {
   font-family: var(--title-style);
@@ -433,29 +431,29 @@ li {
   background-clip: content-box;
 }
 
-.products {
+.products-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
   padding: 0;
 }
 
-.products-list {
+.products-item {
   flex-basis: calc(100% / 4 - 22.5px);
   flex-grow: 0;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.products-list:nth-child(4n) {
+.products-item:nth-child(4n) {
   margin-right: 0px;
 }
 
-.products-list:nth-child(n + 5) {
+.products-item:nth-child(n + 5) {
   margin-bottom: 0px;
 }
 
-.products-list__overlay--image {
+.products-list__image {
   display: block;
   cursor: pointer;
   background-color: #e9f0fd;
@@ -500,17 +498,17 @@ li {
   transition-timing-function: var(--timing-fn);
 }
 
-.products-list:hover .products-list__about--description {
+.products-item:hover .products-list__about--description {
   background-color: #1abc9c;
   transition-timing-function: var(--timing-fn);
 }
 
-.products-list:hover .products-list__about--price {
+.products-item:hover .products-list__about--price {
   background-color: #7fd9c7;
   transition-timing-function: var(--timing-fn);
 }
 
-.products-list .products-list__overlay::before {
+.products-item .products-list__overlay::before {
   position: absolute;
   display: none;
   top: 0px;
@@ -538,7 +536,7 @@ li {
   align-items: center;
 }
 
-.actions_list:hover {
+.actions__list:hover {
   opacity: 1;
   animation-name: buttonBlock;
   animation-duration: 250ms;
@@ -546,31 +544,45 @@ li {
   animation-fill-mode: backwards;
 }
 
-.actions_list {
+.actions__list {
   position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
   opacity: 0;
   width: 100%;
-  height: 100%;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
-.actions_item {
+.actions__item {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
   padding: 0;
 }
 
-.actions_list .actions__button {
+.actions__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.actions__item:nth-last-child(1) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.actions__list .actions__button {
   display: flex;
   flex-wrap: wrap;
   width: 55px;
   height: 55px;
   padding: 0;
   margin: 0;
-  margin-right: 8px;
   border: 0;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -579,12 +591,12 @@ li {
   cursor: pointer;
 }
 
-.actions_list .actions__button.actions__button--arrow-icon {
+.actions__list .actions__button.actions__button--arrow-icon {
   border: 1px solid #ffffff;
   transition-timing-function: var(--timing-fn);
 }
 
-.actions_list .actions__button.actions__button--addcard-icon {
+.actions__list .actions__button.actions__button--addcard-icon {
   display: flex;
   justify-content: center;
   width: 180px;
@@ -626,15 +638,15 @@ li {
   transition-timing-function: var(--timing-fn);
 }
 
-.actions_list .actions__button.actions__button--like-icon {
+.actions__list .actions__button.actions__button--like-icon {
   background-image: url(../images/icons/like.png);
 }
 
-.actions_list .actions__button.actions__button--arrow-icon {
+.actions__list .actions__button.actions__button--arrow-icon {
   background-image: url(../images/icons/arrow.png);
 }
 
-.actions_list .actions__button.actions__button--timing-icon {
+.actions__list .actions__button.actions__button--timing-icon {
   background-image: url(../images/icons/time.png);
 }
 
@@ -663,10 +675,8 @@ li {
 
 /* News section */
 
-.page-section__latest-news {
+.latest-news {
   background-color: #e9effd;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .news__list {
