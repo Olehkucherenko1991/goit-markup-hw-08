@@ -536,7 +536,7 @@ li {
   align-items: center;
 }
 
-.actions__list:hover {
+.products-list__overlay:hover .actions__list {
   opacity: 1;
   animation-name: buttonBlock;
   animation-duration: 250ms;
